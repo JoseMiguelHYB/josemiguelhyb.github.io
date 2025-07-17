@@ -1,88 +1,92 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>José Miguel DevSof</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png"> <!-- Usa tu logo o iniciales -->
 </head>
 <body>
   <header>
     <h1>José Miguel Castro Huayllas</h1>
     <p>Ingeniero Informático · Universidad Complutense de Madrid</p>
+    <a href="CV_JoseMiguelCastroHuayllas.pdf" class="cta-button" download>📄 Descargar CV</a>
   </header>
 
   <main class="container">
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Soy ingeniero informático por la Universidad Complutense de Madrid, apasionado por el desarrollo backend, la eficiencia del software y el diseño de soluciones escalables. Me especializo en Java, Spring Boot y automatización de sistemas.</p>
+    <section class="intro">
+      <img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">
+      <h2>Hola 👋</h2>
+      <p>¡Hola! Soy ingeniero informático y administrador de sistemas. Me gusta trabajar con Java, Spring Boot, Python, C y C++, automatizar procesos con scripting y sacar el máximo partido a entornos Linux. Me motiva construir software robusto y mantener sistemas seguros y eficientes. Échale un vistazo a mis proyectos 👇</p>
     </section>
 
-    
     <section>
-  <h2>Proyectos Personales</h2>
-  <div class="projects-grid">
-    <!-- Proyecto 1 -->
-    <div class="project-card">
-      <img src="img/citas_medicas.png" alt="ConsultasApp">
-      <h3>ConsultasApp</h3>
-      <p>Gestión de citas médicas con Java y PostgreSQL.</p>
-      <p>🧩 ☕ 🐘 🎨</p>
-      <a href="https://github.com/JoseMiguelHYB/ConsultasApp" target="_blank">Ver en GitHub</a>
-    </div>
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <!-- Repite estructura -->
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+          <img src="img/citas_medicas.png" alt="ConsultasApp">
+          <h3>ConsultasApp</h3>
+          <p>App de gestión de citas médicas para clínicas. Backend REST con validación concurrente.</p>
+          <p>🧩 ☕ 🐘 🎨</p>
+          <a href="https://github.com/JoseMiguelHYB/ConsultasApp" target="_blank">Ver en GitHub</a>
+        </div>
 
-    <!-- Proyecto 2 -->
-    <div class="project-card">
-      <img src="img/salud animal consejo.jpg" alt="DogHealth">
-      <h3>DogHealth</h3>
-      <p>Control de salud animal. Backend en Java, frontend en React.</p>
-      <p>⚙️ ⚛️ ☕ 🧑‍💻 🎨</p>
-      <a href="https://github.com/JoseMiguelHYB/DogHealth" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <img src="img/salud animal consejo.jpg" alt="DogHealth">
+          <h3>DogHealth</h3>
+          <p>Control y seguimiento de salud animal con backend en Java y frontend interactivo.</p>
+          <p>⚙️ ⚛️ ☕ 🧑‍💻 🎨</p>
+          <a href="https://github.com/JoseMiguelHYB/DogHealth" target="_blank">Ver en GitHub</a>
+        </div>
 
-    <!-- Proyecto 3 -->
-    <div class="project-card">
-      <img src="img/retiro-corrrer.jpg" alt="TopRankers">
-      <h3>TopRankers</h3>
-      <p>Ranking y métricas de campañas de correo con visualización de datos.</p>
-      <p>📊 🐍 📬 💻 🖥️</p>
-      <a href="https://github.com/JoseMiguelHYB/TopRankers" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <img src="img/retiro-corrrer.jpg" alt="TopRankers">
+          <h3>TopRankers</h3>
+          <p>Ranking y métricas de campañas de mailing con visualizaciones interactivas.</p>
+          <p>📊 🐍 📬 💻 🖥️</p>
+          <a href="https://github.com/JoseMiguelHYB/TopRankers" target="_blank">Ver en GitHub</a>
+        </div>
 
-    <!-- Proyecto 4 -->
-    <div class="project-card">
-      <img src="img/comparador_precios.PNG" alt="PriceSpy">
-      <h3>Comparador de precios</h3>
-      <p>App qeu se encarga de scrapear la web buscando los mejores precios.</p>
-      <p>🌿 🐍 📡 ⚛️ ☁️</p>
-      <a href="https://github.com/JoseMiguelHYB/SmartGarden" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Añade tus otros proyectos igual -->
+         <!-- Proyecto 4 -->
+        <div class="project-card">
+          <img src="img/comparador_precios.PNG" alt="PriceSpy">
+          <h3>Comparador de precios</h3>
+          <p>App qeu se encarga de scrapear la web buscando los mejores precios.</p>
+          <p>🌿 🐍 📡 ⚛️ ☁️</p>
+          <a href="https://github.com/JoseMiguelHYB/ConsultasApp" target="_blank">Ver en GitHub</a>
+        </div>
 
-    <!-- Proyecto 5 -->
-    <div class="project-card">
-      <img src="img/intercambio_de_datos.png" alt="CodeQuiz">
-      <h3>GIDEP</h3>
-      <p>Gestor de Intercambio de datos para instrituciones públicas.</p>
-      <p>🎮 💾 💡 🧠 🖥️</p>
-      <a href="https://github.com/JoseMiguelHYB/CodeQuiz" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 5 -->
+        <div class="project-card">
+          <img src="img/intercambio_de_datos.png" alt="CodeQuiz">
+          <h3>GIDEP</h3>
+          <p>Gestor de Intercambio de datos para instrituciones públicas.</p>
+          <p>🎮 💾 💡 🧠 🖥️</p>
+          <a href="https://github.com/JoseMiguelHYB/DogHealth" target="_blank">Ver en GitHub</a>
+        </div>
 
-    <!-- Proyecto 6 -->
-    <div class="project-card">
-      <img src="img/poner_lavadora.PNG" alt="FinanceTrack">
-      <h3>AvisaLuz</h3>
-      <p>Notificaicones de cuando poner la lavadora, planchar, etc...</p>
-      <p>💰 📈 🐘 📊 🧮</p>
-      <a href="https://github.com/JoseMiguelHYB/FinanceTrack" target="_blank">Ver en GitHub</a>
-    </div>
-  </div>
-</section>
+        <!-- Proyecto 6 -->
+        <div class="project-card">
+          <img src="img/poner_lavadora.PNG" alt="TopRankers">
+          <h3>AvisaLuz</h3>
+          <p>Notificaicones de cuando poner la lavadora, planchar, etc...</p>
+          <p>💰 📈 🐘 📊 🧮</p>
+          <a href="https://github.com/JoseMiguelHYB/TopRankers" target="_blank">Ver en GitHub</a>
+        </div>
+      </div>
+    </section>
 
     <section>
       <h2>Contacto</h2>
-      <ul>
+      <p>¿Quieres hablar sobre proyectos, colaboración o una oportunidad profesional? 📬</p>
+      <ul class="contact-list">
         <li>Email: <a href="mailto:josemigueldevsof@gmail.com">josemigueldevsof@gmail.com</a></li>
         <li>GitHub: <a href="https://github.com/JoseMiguelHYB" target="_blank">@JoseMiguelHYB</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/josemiguelcastro" target="_blank">josemiguelcastro</a></li>
@@ -91,9 +95,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 José Miguel DevSof</p>
+    <p>&copy; 2025 José Miguel DevSof · Hecho con ❤️ y café ☕</p>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
