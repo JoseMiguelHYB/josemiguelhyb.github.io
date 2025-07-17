@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Miguel DevSof</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="img/favicon.png"> <!-- Usa tu logo o iniciales -->
 </head>
+
 <body>
   <header>
     <h1>José Miguel Castro Huayllas</h1>
@@ -19,7 +21,19 @@
     <section class="intro">
       <img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">
       <h2>Hola 👋</h2>
-      <p>¡Hola! Soy ingeniero informático y administrador de sistemas. Me gusta trabajar con Java, Spring Boot, Python, C y C++, automatizar procesos con scripting y sacar el máximo partido a entornos Linux. Me motiva construir software robusto y mantener sistemas seguros y eficientes. Échale un vistazo a mis proyectos 👇</p>
+      <p>Soy ingeniero informático y administrador de sistemas. Me gusta trabajar con Java, Spring Boot, Python, C y
+        C++, automatizar procesos con scripting y sacar el máximo partido a entornos Linux. Me motiva construir software
+        robusto y mantener sistemas seguros y eficientes. Échale un vistazo a mis proyectos 👇</p>
+      <p>Encuéntrame también en:</p>
+      <div style="margin-top: 10px;">
+        <a href="https://github.com/JoseMiguelHYB" target="_blank" style="margin: 0 15px;">
+          <img src="img/github.png" alt="GitHub" width="36" height="36">
+        </a>
+        <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank" style="margin: 0 15px;">
+          <img src="img/linkedin.png" alt="LinkedIn" width="36" height="36">
+        </a>
+
+      </div>
     </section>
 
     <section>
@@ -31,8 +45,15 @@
           <img src="img/citas_medicas.png" alt="ConsultasApp">
           <h3>ConsultasApp</h3>
           <p>App de gestión de citas médicas para clínicas. Backend REST con validación concurrente.</p>
-          <p>🧩 ☕ 🐘 🎨</p>
-          <a href="https://github.com/JoseMiguelHYB/ConsultasApp" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-java">☕ Java</span>
+            <span class="etiqueta-api-rest">🔗 API REST</span>
+            <span class="etiqueta-react">⚛️ React</span>
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
 
         <!-- Proyecto 2 -->
@@ -40,8 +61,15 @@
           <img src="img/salud animal consejo.jpg" alt="DogHealth">
           <h3>DogHealth</h3>
           <p>Control y seguimiento de salud animal con backend en Java y frontend interactivo.</p>
-          <p>⚙️ ⚛️ ☕ 🧑‍💻 🎨</p>
-          <a href="https://github.com/JoseMiguelHYB/DogHealth" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-javascript">⚡️ JavaScript</span>
+            <span class="etiqueta-node-js">⚙️ Node JS</span>
+            <span class="etiqueta-sql"> 💾 SQL</span> 
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
 
         <!-- Proyecto 3 -->
@@ -49,18 +77,32 @@
           <img src="img/retiro-corrrer.jpg" alt="TopRankers">
           <h3>TopRankers</h3>
           <p>Ranking y métricas de campañas de mailing con visualizaciones interactivas.</p>
-          <p>📊 🐍 📬 💻 🖥️</p>
-          <a href="https://github.com/JoseMiguelHYB/TopRankers" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-javascript">⚡️ JavaScript</span>
+            <span class="etiqueta-node-js">⚙️ Node JS</span>
+            <span class="etiqueta-sql"> 💾 SQL</span> 
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
 
         <!-- Añade tus otros proyectos igual -->
-         <!-- Proyecto 4 -->
+        <!-- Proyecto 4 -->
         <div class="project-card">
           <img src="img/comparador_precios.PNG" alt="PriceSpy">
           <h3>Comparador de precios</h3>
           <p>App qeu se encarga de scrapear la web buscando los mejores precios.</p>
-          <p>🌿 🐍 📡 ⚛️ ☁️</p>
-          <a href="https://github.com/JoseMiguelHYB/ConsultasApp" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-java">☕ Java</span>
+            <span class="etiqueta-api-rest">🔗 API REST</span>
+            <span class="etiqueta-react">⚛️ React</span>
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
 
         <!-- Proyecto 5 -->
@@ -68,8 +110,15 @@
           <img src="img/intercambio_de_datos.png" alt="CodeQuiz">
           <h3>GIDEP</h3>
           <p>Gestor de Intercambio de datos para instrituciones públicas.</p>
-          <p>🎮 💾 💡 🧠 🖥️</p>
-          <a href="https://github.com/JoseMiguelHYB/DogHealth" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-javascript">⚡️ JavaScript</span>
+            <span class="etiqueta-node-js">⚙️ Node JS</span>
+            <span class="etiqueta-sql"> 💾 SQL</span> 
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
 
         <!-- Proyecto 6 -->
@@ -77,25 +126,102 @@
           <img src="img/poner_lavadora.PNG" alt="TopRankers">
           <h3>AvisaLuz</h3>
           <p>Notificaicones de cuando poner la lavadora, planchar, etc...</p>
-          <p>💰 📈 🐘 📊 🧮</p>
-          <a href="https://github.com/JoseMiguelHYB/TopRankers" target="_blank">Ver en GitHub</a>
+          <div class="etiquetas">
+            <span class="etiqueta-javascript">⚡️ JavaScript</span>
+            <span class="etiqueta-node-js">⚙️ Node JS</span>
+            <span class="etiqueta-sql"> 💾 SQL</span> 
+          </div>
+          <div class="botones">
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Contacto</h2>
-      <p>¿Quieres hablar sobre proyectos, colaboración o una oportunidad profesional? 📬</p>
+      <h2>Blog & Artículos Técnicos</h2>
+      <p>En este espacio comparto aprendizajes, trucos de programación y soluciones técnicas a problemas reales.</p>
       <ul class="contact-list">
-        <li>Email: <a href="mailto:josemigueldevsof@gmail.com">josemigueldevsof@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/JoseMiguelHYB" target="_blank">@JoseMiguelHYB</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/josemiguelcastro" target="_blank">josemiguelcastro</a></li>
+        <li><a href="#">✅ Cómo automatizar backups con Bash</a></li>
+        <li><a href="#">📊 Visualización de métricas con Looker Studio</a></li>
+        <li><a href="#">🧩 Diseño de APIs RESTful con Spring Boot</a></li>
+        <li><a href="#">🚀 Primeros pasos con Docker en entornos Linux</a></li>
       </ul>
     </section>
+
+    <section>
+      <h2>Certificados</h2>
+      <p>Formación complementaria que he realizado y certificado oficialmente.</p>
+      <ul class="contact-list">
+        <li><a href="https://www.credly.com/badges/linux-cisco" target="_blank">🐧 Linux I – Cisco Networking Academy
+            (2025)</a></li>
+        <li><a href="https://www.credly.com/badges/sql-flask-django" target="_blank">🗄️ SQL, Flask y Django – IBM
+            SkillsBuild (2025)</a></li>
+        <li><a href="https://www.credly.com/badges/git-github-udemy" target="_blank">🔧 Git & GitHub – Udemy (2018)</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="contacto-ubicacion">
+      <h2>Contacto</h2>
+      <div class="contacto-grid">
+        <!-- Formulario -->
+        <div class="form-container compacto">
+          <form action="https://formsubmit.co/josemigueldevsof@gmail.com" method="POST">
+            <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <!-- Opcional: para evitar spam -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Opcional: redirección tras enviar -->
+            <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mapa-container">
+          <h3>Ubicación</h3>
+          <p>Estoy disponible para trabajar de forma remota o presencial en Madrid.</p>
+          <div class="mapa-con-icono">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.935774391138!2d-3.6530133!3d40.4067275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42260cbf3822b1%3A0x6ad50f98635951cf!2sCamino%20de%20los%20Vinateros%2C%2088%2C%2028070%20Madrid!5e0!3m2!1ses!2ses!4v1721229000000!5m2!1ses!2ses"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <!-- Ícono "Aquí estoy" encima (descomenta si lo necesitas) -->
+            <!-- <div class="emoji-ubicacion" title="Aquí estoy">📍</div> -->
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
   </main>
 
   <footer>
     <p>&copy; 2025 José Miguel DevSof · Hecho con ❤️ y café ☕</p>
   </footer>
 </body>
+
 </html>

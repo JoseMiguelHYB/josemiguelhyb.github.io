@@ -131,3 +131,179 @@ footer p {
     font-size: 0.9em;
   }
 }
+
+
+
+/*formulario*/
+
+.form-container.compacto {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-container .campo {
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/*miady mitad*/
+
+.contacto-grid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.form-container {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.mapa-container {
+  flex: 1 1 50%;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botones base */
+.botones a {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  color: white; /* Asegura que el texto sea blanco */
+}
+
+/*Reqiuetas personalizADAS*/
+
+.etiqueta-java {
+  background-color: #fce9db; /* Suave anaranjado */
+  color: #b55318;           /* Marrón Java */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.etiqueta-api-rest {
+  background-color: #e0f7fa; /* Azul claro REST */
+  color: #00796b;            /* Verde azulado oscuro */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.etiqueta-react {
+  background-color: #e3f2fd; /* Azul claro React */
+  color: #1976d2;            /* Azul React */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* GitHub: fondo negro, texto blanco */
+.btn-github {
+  background-color: #000;  /* negro */
+  color: #fff;
+}
+
+/* Demo: fondo morado, texto blanco */
+.btn-demo {
+  background-color: #007bff; /* Azul brillante */
+  color: white;
+}
+
+/* Efecto suave sin cambiar colores */
+.btn-github:hover,
+.btn-demo:hover {
+  transform: scale(1.05);
+}
+
+
+.etiqueta-javascript {
+  background-color: #fff8dc;  /* Amarillo muy claro */
+  color: #f0db4f;             /* Amarillo JS */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.etiqueta-node-js {
+  background-color: #e8f5e9;  /* Verde claro */
+  color: #3c873a;             /* Verde Node.js */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.etiqueta-sql {
+  background-color: #ede7f6;  /* Lila muy claro */
+  color: #5e35b1;             /* Púrpura SQL */
+  font-size: 0.85em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
