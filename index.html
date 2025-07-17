@@ -197,27 +197,126 @@
     <section id="blog">
       <h2>Blog & Artículos Técnicos</h2>
       <p>En este espacio comparto aprendizajes, trucos de programación y soluciones técnicas a problemas reales.</p>
-      <ul class="contact-list">
-        <li><a href="#">✅ Cómo automatizar backups con Bash</a></li>
-        <li><a href="#">📊 Visualización de métricas con Looker Studio</a></li>
-        <li><a href="#">🧩 Diseño de APIs RESTful con Spring Boot</a></li>
-        <li><a href="#">🚀 Primeros pasos con Docker en entornos Linux</a></li>
-      </ul>
+
+      <div class="blog-layout">
+        <!-- Documento Google Docs a la izquierda -->
+        <div class="blog-doc">
+          <iframe id="docFrame"
+            src="https://docs.google.com/document/d/1SlvuFJCzX2tRrnh-2roh9RG1Y5x7_2q8NMIyV0pGVgQ/preview"
+            style="border:1px solid #ccc; border-radius:8px;">
+          </iframe>
+        </div>
+
+        <!-- Lista de artículos a la derecha -->
+        <!-- Lista de artículos a la derecha -->
+        <div class="blog-list" id="articleList">
+          <div class="blog-card active"
+            data-doc="https://docs.google.com/document/d/1SlvuFJCzX2tRrnh-2roh9RG1Y5x7_2q8NMIyV0pGVgQ/preview">
+            <h3>✅ Backups automáticos con Bash</h3>
+            <p>Script para automatizar backups en servidores Linux usando cron y Bash.</p>
+          </div>
+
+          <div class="blog-card"
+            data-doc="https://docs.google.com/document/d/1EzcZz0elqBd2l4EzZ2H0ctG9qiuALdLiBo92EO-2ALQ/preview">
+            <h3>📈 Monitorización con Zabbix</h3>
+            <p>Guía para instalar y configurar Zabbix Server y Agent paso a paso.</p>
+          </div>
+
+          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_LINEALES/preview">
+            <h3>🧮 Estructuras de Datos Lineales</h3>
+            <p>Resumen práctico de listas, pilas, colas y sus implementaciones básicas.</p>
+          </div>
+
+          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_SCRIPTING/preview">
+            <h3>💻 Comandos útiles en scripting</h3>
+            <p>Trucos de Bash para scripts más potentes: sed, awk, arrays, funciones y más.</p>
+          </div>
+
+          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_ARBOL/preview">
+            <h3>🌲 Árboles Binarios en profundidad</h3>
+            <p>Teoría y ejemplos de inserción, recorrido y eliminación en árboles binarios.</p>
+          </div>
+        </div>
+        <!-- Agrega más artículos aquí -->
+      </div>
+      </div>
     </section>
+
+
+
+
+
 
     <!-- CERTIFICADOS -->
     <section id="certificados">
       <h2>Certificados</h2>
       <p>Formación complementaria que he realizado y certificado oficialmente.</p>
-      <ul class="contact-list">
-        <li><a href="https://www.credly.com/badges/linux-cisco" target="_blank">🐧 Linux I – Cisco Networking Academy
-            (2025)</a></li>
-        <li><a href="https://www.credly.com/badges/sql-flask-django" target="_blank">🗄️ SQL, Flask y Django – IBM
-            SkillsBuild (2025)</a></li>
-        <li><a href="https://www.credly.com/badges/git-github-udemy" target="_blank">🔧 Git & GitHub – Udemy (2018)</a>
-        </li>
-      </ul>
+      <div class="certificados-grid">
+
+        <!-- Certificado Cisco -->
+        <div class="certificado-item">
+          <a href="img/certificados/certificado_de_linux_1_por_cisco.pdf" target="_blank">
+            <img src="img/certificados/linux1.png" alt="Certificado Linux I - Cisco">
+          </a>
+          <p><strong>Linux I – Cisco Networking Academy (2025)</strong></p>
+        </div>
+
+        <!-- Certificado SkillsBuild -->
+        <div class="certificado-item">
+          <a href="img/certificados/certificado_de_finalización_skillsbuild.pdf" target="_blank">
+            <img src="img/certificados/certificado_de_finalización_skillsbuild.png"
+              alt="Certificado SQL, Flask y Django - IBM SkillsBuild">
+          </a>
+          <p><strong>SQL, Flask y Django – IBM SkillsBuild (2025)</strong></p>
+        </div>
+
+        <!-- Certificado Git & GitHub -->
+        <div class="certificado-item">
+          <a href="img/certificados/certificado_giygithub.pdf" target="_blank">
+            <img src="img/certificados/certificado_de_git&github.png" alt="Certificado Git & GitHub - Udemy">
+          </a>
+          <p><strong>Git & GitHub – Udemy (2018)</strong></p>
+        </div>
+
+      </div>
     </section>
+
+
+    <!-- RECOMENDACIONES -->
+    <section id="recomendaciones">
+      <h2>Recomendaciones</h2>
+      <p>Algunas palabras de colegas y mentores con quienes he trabajado en distintos contextos profesionales y
+        académicos.</p>
+      <div class="recomendaciones-grid">
+
+        <div class="recomendacion-item">
+          <blockquote>
+            “Destacó por su autonomía, responsabilidad y dominio técnico en plataformas digitales.”
+          </blockquote>
+          <p><strong>– Raquel García García-Serrano</strong>, RRHH en CIFESAL</p>
+          <a href="docs/recomendacion_cifesal.pdf" target="_blank">📄 Ver carta</a>
+        </div>
+
+        <div class="recomendacion-item">
+          <blockquote>
+            “Gran implicación en la implantación de un ERP con Odoo y excelente actitud para aprender.”
+          </blockquote>
+          <p><strong>– Andrés Casanueva Tomás</strong>, CEO en Ábaco Developments</p>
+          <a href="docs/recomendacion_abaco_practicas1.pdf" target="_blank">📄 Ver carta</a>
+        </div>
+
+        <div class="recomendacion-item">
+          <blockquote>
+            “Desarrolló soluciones con IA en Python que automatizaron procesos y generaron un ahorro notable.”
+          </blockquote>
+          <p><strong>– Andrés Casanueva Tomás</strong>, CEO en Ábaco Developments</p>
+          <a href="docs/recomendacion_abaco_practicas2.pdf" target="_blank">📄 Ver carta</a>
+        </div>
+
+      </div>
+
+    </section>
+
 
     <!-- CONTACTO -->
     <section id="contacto" class="contacto-ubicacion">
