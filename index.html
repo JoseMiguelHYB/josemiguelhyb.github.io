@@ -11,33 +11,54 @@
 </head>
 
 <body>
+  
   <header>
     <h1>José Miguel Castro Huayllas</h1>
     <p>Ingeniero Informático · Universidad Complutense de Madrid</p>
+    <!-- Íconos de redes sociales -->
+    <div style="margin-top: 15px;">
+      <a href="https://github.com/JoseMiguelHYB" target="_blank" style="margin: 0 10px; text-decoration: none;">
+        <img src="img/github.png" alt="GitHub" width="40" height="40">
+      </a>
+      <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank"
+        style="margin: 0 10px; text-decoration: none;">
+        <img src="img/linkedin.png" alt="LinkedIn" width="40" height="40">
+      </a>
+    </div>
+    <!-- Botón CV -->
     <a href="CV_JoseMiguelCastroHuayllas.pdf" class="cta-button" download>📄 Descargar CV</a>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">
-      <h2>Hola 👋</h2>
-      <p>Soy ingeniero informático y administrador de sistemas. Me gusta trabajar con Java, Spring Boot, Python, C y
-        C++, automatizar procesos con scripting y sacar el máximo partido a entornos Linux. Me motiva construir software
-        robusto y mantener sistemas seguros y eficientes. Échale un vistazo a mis proyectos 👇</p>
-      <p>Encuéntrame también en:</p>
-      <div style="margin-top: 10px;">
-        <a href="https://github.com/JoseMiguelHYB" target="_blank" style="margin: 0 15px;">
-          <img src="img/github.png" alt="GitHub" width="36" height="36">
-        </a>
-        <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank" style="margin: 0 15px;">
-          <img src="img/linkedin.png" alt="LinkedIn" width="36" height="36">
-        </a>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-      </div>
+  <main class="container">
+    <h2>Sobre mí</h2>
+    <section class="intro">
+      <!--<img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">-->
+
+      <p>
+        Soy ingeniero informático con perfil mixto en desarrollo backend y administración de sistemas. Trabajo con Java,
+        Spring Boot, Python y C/C++, y disfruto automatizando procesos en entornos Linux.
+      </p>
+      <p>
+        Tengo experiencia desarrollando software robusto, gestionando servidores y aplicando buenas prácticas en redes,
+        APIs REST y bases de datos SQL. Siempre busco aprender y afrontar nuevos retos tecnológicos.
+      </p>
+      <p>
+        Échale un vistazo a algunos de mis proyectos 👇
+      </p>
     </section>
 
     <section>
-      <h2>Proyectos Destacados</h2>
+      <h2>Proyectos Personales</h2>
       <div class="projects-grid">
         <!-- Repite estructura -->
         <!-- Proyecto 1 -->
@@ -51,8 +72,8 @@
             <span class="etiqueta-react">⚛️ React</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
 
@@ -64,11 +85,11 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span> 
+            <span class="etiqueta-sql"> 💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
 
@@ -80,11 +101,11 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span> 
+            <span class="etiqueta-sql"> 💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
 
@@ -100,8 +121,8 @@
             <span class="etiqueta-react">⚛️ React</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
 
@@ -113,11 +134,11 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span> 
+            <span class="etiqueta-sql"> 💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
 
@@ -129,11 +150,11 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span> 
+            <span class="etiqueta-sql"> 💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
           </div>
         </div>
       </div>
