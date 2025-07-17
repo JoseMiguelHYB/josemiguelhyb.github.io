@@ -7,26 +7,26 @@
   <title>José Miguel DevSof</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.png"> <!-- Usa tu logo o iniciales -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
-  
+
   <header>
     <h1>José Miguel Castro Huayllas</h1>
     <p>Ingeniero Informático · Universidad Complutense de Madrid</p>
-    <!-- Íconos de redes sociales -->
     <div style="margin-top: 15px;">
       <a href="https://github.com/JoseMiguelHYB" target="_blank" style="margin: 0 10px; text-decoration: none;">
         <img src="img/github.png" alt="GitHub" width="40" height="40">
       </a>
-      <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank"
-        style="margin: 0 10px; text-decoration: none;">
+      <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank" style="margin: 0 10px; text-decoration: none;">
         <img src="img/linkedin.png" alt="LinkedIn" width="40" height="40">
       </a>
     </div>
-    <!-- Botón CV -->
     <a href="CV_JoseMiguelCastroHuayllas.pdf" class="cta-button" download>📄 Descargar CV</a>
+    <!-- Botón para alternar modo claro/oscuro -->
+  <button id="toggle-theme" title="Cambiar tema">🌙</button>
+
   </header>
 
   <nav class="navbar">
@@ -40,10 +40,11 @@
   </nav>
 
   <main class="container">
-    <h2>Sobre mí</h2>
-    <section class="intro">
+    
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="intro">
+      <h2 class="titulo-seccion">Sobre mí</h2>
       <!--<img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">-->
-
       <p>
         Soy ingeniero informático con perfil mixto en desarrollo backend y administración de sistemas. Trabajo con Java,
         Spring Boot, Python y C/C++, y disfruto automatizando procesos en entornos Linux.
@@ -57,10 +58,10 @@
       </p>
     </section>
 
-    <section>
+    <!-- PROYECTOS -->
+    <section id="proyectos">
       <h2>Proyectos Personales</h2>
       <div class="projects-grid">
-        <!-- Repite estructura -->
         <!-- Proyecto 1 -->
         <div class="project-card">
           <img src="img/citas_medicas.png" alt="ConsultasApp">
@@ -72,8 +73,8 @@
             <span class="etiqueta-react">⚛️ React</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
 
@@ -85,11 +86,11 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span>
+            <span class="etiqueta-sql">💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
 
@@ -101,66 +102,66 @@
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span>
+            <span class="etiqueta-sql">💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
 
-        <!-- Añade tus otros proyectos igual -->
         <!-- Proyecto 4 -->
         <div class="project-card">
           <img src="img/comparador_precios.PNG" alt="PriceSpy">
           <h3>Comparador de precios</h3>
-          <p>App qeu se encarga de scrapear la web buscando los mejores precios.</p>
+          <p>App que se encarga de scrapear la web buscando los mejores precios.</p>
           <div class="etiquetas">
             <span class="etiqueta-java">☕ Java</span>
             <span class="etiqueta-api-rest">🔗 API REST</span>
             <span class="etiqueta-react">⚛️ React</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
 
         <!-- Proyecto 5 -->
         <div class="project-card">
-          <img src="img/intercambio_de_datos.png" alt="CodeQuiz">
+          <img src="img/intercambio_de_datos.png" alt="GIDEP">
           <h3>GIDEP</h3>
-          <p>Gestor de Intercambio de datos para instrituciones públicas.</p>
+          <p>Gestor de Intercambio de datos para instituciones públicas.</p>
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span>
+            <span class="etiqueta-sql">💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
 
         <!-- Proyecto 6 -->
         <div class="project-card">
-          <img src="img/poner_lavadora.PNG" alt="TopRankers">
+          <img src="img/poner_lavadora.PNG" alt="AvisaLuz">
           <h3>AvisaLuz</h3>
-          <p>Notificaicones de cuando poner la lavadora, planchar, etc...</p>
+          <p>Notificaciones de cuándo poner la lavadora, planchar, etc...</p>
           <div class="etiquetas">
             <span class="etiqueta-javascript">⚡️ JavaScript</span>
             <span class="etiqueta-node-js">⚙️ Node JS</span>
-            <span class="etiqueta-sql"> 💾 SQL</span>
+            <span class="etiqueta-sql">💾 SQL</span>
           </div>
           <div class="botones">
-            <a href="https://github.com/tu-proyecto" class="btn-github" title="Ver código en GitHub">GitHub</a>
-            <a href="https://tu-proyecto.vercel.app" class="btn-demo" title="Probar demo desplegada">Demo</a>
+            <a href="https://github.com/tu-proyecto" class="btn-github">GitHub</a>
+            <a href="https://tu-proyecto.vercel.app" class="btn-demo">Demo</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- BLOG -->
+    <section id="blog">
       <h2>Blog & Artículos Técnicos</h2>
       <p>En este espacio comparto aprendizajes, trucos de programación y soluciones técnicas a problemas reales.</p>
       <ul class="contact-list">
@@ -171,22 +172,22 @@
       </ul>
     </section>
 
-    <section>
+    <!-- CERTIFICADOS -->
+    <section id="certificados">
       <h2>Certificados</h2>
       <p>Formación complementaria que he realizado y certificado oficialmente.</p>
       <ul class="contact-list">
-        <li><a href="https://www.credly.com/badges/linux-cisco" target="_blank">🐧 Linux I – Cisco Networking Academy
-            (2025)</a></li>
-        <li><a href="https://www.credly.com/badges/sql-flask-django" target="_blank">🗄️ SQL, Flask y Django – IBM
-            SkillsBuild (2025)</a></li>
-        <li><a href="https://www.credly.com/badges/git-github-udemy" target="_blank">🔧 Git & GitHub – Udemy (2018)</a>
-        </li>
+        <li><a href="https://www.credly.com/badges/linux-cisco" target="_blank">🐧 Linux I – Cisco Networking Academy (2025)</a></li>
+        <li><a href="https://www.credly.com/badges/sql-flask-django" target="_blank">🗄️ SQL, Flask y Django – IBM SkillsBuild (2025)</a></li>
+        <li><a href="https://www.credly.com/badges/git-github-udemy" target="_blank">🔧 Git & GitHub – Udemy (2018)</a></li>
       </ul>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="contacto-ubicacion">
       <h2>Contacto</h2>
       <div class="contacto-grid">
+
         <!-- Formulario -->
         <div class="form-container compacto">
           <form action="https://formsubmit.co/josemigueldevsof@gmail.com" method="POST">
@@ -205,10 +206,7 @@
               <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             </div>
 
-            <!-- Opcional: para evitar spam -->
             <input type="hidden" name="_captcha" value="false">
-
-            <!-- Opcional: redirección tras enviar -->
             <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
 
             <button type="submit">Enviar</button>
@@ -224,25 +222,19 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.935774391138!2d-3.6530133!3d40.4067275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42260cbf3822b1%3A0x6ad50f98635951cf!2sCamino%20de%20los%20Vinateros%2C%2088%2C%2028070%20Madrid!5e0!3m2!1ses!2ses!4v1721229000000!5m2!1ses!2ses"
               width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
-
-            <!-- Ícono "Aquí estoy" encima (descomenta si lo necesitas) -->
-            <!-- <div class="emoji-ubicacion" title="Aquí estoy">📍</div> -->
           </div>
         </div>
 
-
       </div>
     </section>
-
-
-
-
-
   </main>
 
   <footer>
     <p>&copy; 2025 José Miguel DevSof · Hecho con ❤️ y café ☕</p>
   </footer>
+
+  <script src="javascript.js"></script>
+
 </body>
 
 </html>

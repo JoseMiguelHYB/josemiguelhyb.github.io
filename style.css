@@ -376,3 +376,59 @@ footer p {
 html {
   scroll-behavior: smooth;
 }
+
+
+
+
+/*modo dark*/
+
+/* Tema claro por defecto */
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Tema oscuro activado por clase */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .navbar a:hover {
+  background-color: #333;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .project-card p,
+body.dark-mode .project-card h3,
+body.dark-mode .project-card span {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+
+/*botyon oscurto  arriba derech*/
+#toggle-theme {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+  background-color: #f0f0f0;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode #toggle-theme {
+  background-color: #333;
+  color: #fff;
+}
