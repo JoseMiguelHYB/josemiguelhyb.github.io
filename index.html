@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/secciones/contacto.css"> <!-- Estilos personalizados -->
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
+
 <body>
   <header>
     <h1>José Miguel Castro Huayllas</h1>
@@ -228,13 +229,13 @@
             <p>Resumen práctico de listas, pilas, colas y sus implementaciones básicas.</p>
           </div>
 
-          <div class="blog-card" 
+          <div class="blog-card"
             data-doc="https://docs.google.com/document/d/1aG9mpFFDfQK7W0BIr8UvcYLk-Lt_4tVNdrN_TcnptZQ/preview">
             <h3>💻 Comandos útiles en scripting</h3>
             <p>Trucos de Bash para scripts más potentes: sed, awk, arrays, funciones y más.</p>
           </div>
 
-          <div class="blog-card" 
+          <div class="blog-card"
             data-doc="https://docs.google.com/document/d/1S8e0Z7UW2o5VAhX-FmmaRDSyi_KklazYbtqBTAqIlhs/preview">
             <h3>🌲 Árboles Binarios en profundidad</h3>
             <p>Teoría y ejemplos de inserción, recorrido y eliminación en árboles binarios.</p>
@@ -261,12 +262,22 @@
 
         <!-- Certificado SkillsBuild -->
         <div class="certificado-item">
-          <a href="docs/certificados/certificado_de_finalización_skillsbuild.pdf" target="_blank">
+          <a href="docs/certificados/certificado_django_udemy.pdf" target="_blank">
             <img src="img/certificados/certificado_de_finalización_skillsbuild.png"
               alt="Certificado SQL, Flask y Django - IBM SkillsBuild">
           </a>
           <p><strong>SQL, Flask y Django – IBM SkillsBuild (2025)</strong></p>
         </div>
+
+        <!-- Certificado SkillsBuild -->
+        <div class="certificado-item">
+          <a href="docs/certificados/certificado_iniacion_python_ibm_skillbuild.pdf" target="_blank">
+            <img src="img/certificados/certificado_iniciacion_python_finalización_skillsbuild.png"
+              alt="Certificado de Iniación de python">
+          </a>
+          <p><strong>Iniciación a la programación: Python – IBM SkillsBuild (2025)</strong></p>
+        </div>
+
 
         <!-- Certificado Git & GitHub -->
         <div class="certificado-item">
@@ -321,28 +332,50 @@
 
         <!-- Formulario -->
         <div class="form-container compacto">
+          <h2>📩 Nuevo mensaje</h2>
           <form action="https://formsubmit.co/josemigueldevsof@gmail.com" method="POST">
+
+            <!-- Campo oculto: desactiva captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Redirección al enviar -->
+            <input type="hidden" name="_next" value="gracias.html">
+
+            <!-- Para (readonly, fijo a tu correo) -->
             <div class="campo">
-              <label for="nombre">Nombre:</label>
+              <label for="para">Para:</label>
+              <input type="email" id="para" name="para" value="josemigueldevsof@gmail.com" readonly>
+            </div>
+
+            <!-- Nombre -->
+            <div class="campo">
+              <label for="nombre">Tu nombre:</label>
               <input type="text" id="nombre" name="nombre" required>
             </div>
 
+            <!-- Email del remitente -->
             <div class="campo">
-              <label for="email">Email:</label>
+              <label for="email">Tu email:</label>
               <input type="email" id="email" name="email" required>
             </div>
 
+            <!-- Asunto -->
             <div class="campo">
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" required>
             </div>
 
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+            <!-- Mensaje -->
+            <div class="campo">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
 
+            <!-- Botón -->
             <button type="submit">Enviar</button>
           </form>
         </div>
+
 
         <!-- MAPA -->
         <div class="mapa-container">
