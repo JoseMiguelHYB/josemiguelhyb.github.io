@@ -6,28 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Miguel DevSof</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Este es el estilo principal de la web -->
+  <link rel="stylesheet" href="css/secciones/sobre-mi.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/proyectos.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/stack.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/blog.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/certificados.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/recomendaciones.css"> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/secciones/contacto.css"> <!-- Estilos personalizados -->
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-
 <body>
-
   <header>
     <h1>José Miguel Castro Huayllas</h1>
     <p>Ingeniero Informático · Universidad Complutense de Madrid</p>
     <div style="margin-top: 15px;">
       <a href="https://github.com/JoseMiguelHYB" target="_blank" style="margin: 0 10px; text-decoration: none;">
-        <img src="img/github.png" alt="GitHub" width="40" height="40">
+        <img src="img/iconos/github.png" alt="GitHub" width="40" height="40">
       </a>
       <a href="https://www.linkedin.com/in/josemiguelcastro/" target="_blank"
         style="margin: 0 10px; text-decoration: none;">
-        <img src="img/linkedin.png" alt="LinkedIn" width="40" height="40">
+        <img src="img/iconos/linkedin.png" alt="LinkedIn" width="40" height="40">
       </a>
     </div>
-    <a href="CV_JoseMiguelCastroHuayllas.pdf" class="cta-button" download>📄 Descargar CV</a>
+    <a href="docs/CV_JoseMiguelCastroHuayllas.pdf" class="cta-button" download>📄 Descargar CV</a>
     <!-- Botón para alternar modo claro/oscuro -->
     <button id="toggle-theme" title="Cambiar tema">🌙</button>
-
   </header>
 
   <nav class="navbar">
@@ -41,31 +45,23 @@
   </nav>
 
   <main class="container">
-
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="intro">
-      <h2 class="titulo-seccion">Sobre mí</h2>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
       <!--<img src="img/foto_perfil.jpg" alt="José Miguel Foto" class="profile-pic">-->
       <p>
-        Ingeniero informático con perfil mixto en backend y administración de sistemas. Trabajo con Java, Spring Boot,
-        Python y C/C++, y disfruto automatizando procesos en Linux.
-      </p>
-      <p>
-        Experiencia en desarrollo robusto, gestión de servidores, APIs REST y bases de datos SQL. Siempre aprendiendo y
-        afrontando nuevos retos tecnológicos.
-      </p>
-      <p>
-        Échale un vistazo a algunos de mis proyectos 👇
+        <i>Ingeniero Informático especializado en desarrollo backend, APIs REST, administración de sistemas (Linux), y
+          automatización. Busco oportunidades donde enfrentar retos tecnológicos complejos.</i>
       </p>
     </section>
 
-    <!-- PROYECTOS -->
+    <!-- PROYECTOS PERSONALES -->
     <section id="proyectos">
       <h2>Proyectos Personales</h2>
       <div class="projects-grid">
         <!-- Proyecto 1 -->
         <div class="project-card">
-          <img src="img/citas_medicas.png" alt="ConsultasApp">
+          <img src="img/proyectos/citas_medicas.png" alt="ConsultasApp">
           <h3>ConsultasApp</h3>
           <p>App de gestión de citas médicas para clínicas. Backend REST con validación concurrente.</p>
           <div class="etiquetas">
@@ -81,7 +77,7 @@
 
         <!-- Proyecto 2 -->
         <div class="project-card">
-          <img src="img/salud animal consejo.jpg" alt="DogHealth">
+          <img src="img/proyectos/salud animal consejo.jpg" alt="DogHealth">
           <h3>DogHealth</h3>
           <p>Control y seguimiento de salud animal con backend en Java y frontend interactivo.</p>
           <div class="etiquetas">
@@ -97,7 +93,7 @@
 
         <!-- Proyecto 3 -->
         <div class="project-card">
-          <img src="img/retiro-corrrer.jpg" alt="TopRankers">
+          <img src="img/proyectos/retiro-corrrer.jpg" alt="TopRankers">
           <h3>TopRankers</h3>
           <p>Ranking y métricas de campañas de mailing con visualizaciones interactivas.</p>
           <div class="etiquetas">
@@ -113,7 +109,7 @@
 
         <!-- Proyecto 4 -->
         <div class="project-card">
-          <img src="img/comparador_precios.PNG" alt="PriceSpy">
+          <img src="img/proyectos/comparador_precios.PNG" alt="PriceSpy">
           <h3>Comparador de precios</h3>
           <p>App que se encarga de scrapear la web buscando los mejores precios.</p>
           <div class="etiquetas">
@@ -129,7 +125,7 @@
 
         <!-- Proyecto 5 -->
         <div class="project-card">
-          <img src="img/intercambio_de_datos.png" alt="GIDEP">
+          <img src="img/proyectos/intercambio_de_datos.png" alt="GIDEP">
           <h3>GIDEP</h3>
           <p>Gestor de Intercambio de datos para instituciones públicas.</p>
           <div class="etiquetas">
@@ -145,7 +141,7 @@
 
         <!-- Proyecto 6 -->
         <div class="project-card">
-          <img src="img/poner_lavadora.PNG" alt="AvisaLuz">
+          <img src="img/proyectos/poner_lavadora.PNG" alt="AvisaLuz">
           <h3>AvisaLuz</h3>
           <p>Notificaciones de cuándo poner la lavadora, planchar, etc...</p>
           <div class="etiquetas">
@@ -162,39 +158,43 @@
     </section>
 
     <!--STACK TECNOLOGICO-->
-    <section id="tech-stack" class="stack-section">
+    <section id="stack" class="stack-section">
       <h2>Tecnologías que utilizo</h2>
+      <p>
+        Domino el desarrollo backend con Java y Python, así como la administración de sistemas Linux. Actualmente me
+        estoy especializando en monitorización con Zabbix y despliegue de entornos Docker.
+      </p>
       <div class="stack-slider">
-        <div class="tech-item"><img src="img/logos/java.svg" alt="Java" class="anim-java"><span>Java</span></div>
-        <div class="tech-item"><img src="img/logos/spring.svg" alt="Spring"><span>Spring</span></div>
-        <div class="tech-item"><img src="img/logos/python.svg" alt="Python" class="anim-python"><span>Python</span>
+        <div class="tech-item"><img src="img/iconos/java.svg" alt="Java" class="anim-java"><span>Java</span></div>
+        <div class="tech-item"><img src="img/iconos/spring.svg" alt="Spring"><span>Spring</span></div>
+        <div class="tech-item"><img src="img/iconos/python.svg" alt="Python" class="anim-python"><span>Python</span>
         </div>
-        <div class="tech-item"><img src="img/logos/react.svg" alt="React"><span>React</span></div>
-        <div class="tech-item"><img src="img/logos/docker.svg" alt="Docker"><span>Docker</span></div>
-        <div class="tech-item"><img src="img/logos/linux.svg" alt="Linux"><span>Linux</span></div>
-        <div class="tech-item"><img src="img/logos/mysql.svg" alt="MySQL"><span>MySQL</span></div>
-        <div class="tech-item"><img src="img/logos/mongodb.svg" alt="MongoDB"><span>MongoDB</span></div>
-        <div class="tech-item"><img src="img/logos/git.svg" alt="Git"><span>Git</span></div>
-        <div class="tech-item"><img src="img/logos/bash.svg" alt="Bash"><span>Bash</span></div>
+        <div class="tech-item"><img src="img/iconos/react.svg" alt="React"><span>React</span></div>
+        <div class="tech-item"><img src="img/iconos/docker.svg" alt="Docker"><span>Docker</span></div>
+        <div class="tech-item"><img src="img/iconos/linux.svg" alt="Linux"><span>Linux</span></div>
+        <div class="tech-item"><img src="img/iconos/mysql.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="tech-item"><img src="img/iconos/mongodb.svg" alt="MongoDB"><span>MongoDB</span></div>
+        <div class="tech-item"><img src="img/iconos/git.svg" alt="Git"><span>Git</span></div>
+        <div class="tech-item"><img src="img/iconos/bash.svg" alt="Bash"><span>Bash</span></div>
 
         <!-- Duplicados para scroll continuo -->
-        <div class="tech-item"><img src="img/logos/java.svg" alt="Java" class="anim-java"><span>Java</span></div>
-        <div class="tech-item"><img src="img/logos/spring.svg" alt="Spring"><span>Spring</span></div>
-        <div class="tech-item"><img src="img/logos/python.svg" alt="Python" class="anim-python"><span>Python</span>
+        <div class="tech-item"><img src="img/iconos/java.svg" alt="Java" class="anim-java"><span>Java</span></div>
+        <div class="tech-item"><img src="img/iconos/spring.svg" alt="Spring"><span>Spring</span></div>
+        <div class="tech-item"><img src="img/iconos/python.svg" alt="Python" class="anim-python"><span>Python</span>
         </div>
-        <div class="tech-item"><img src="img/logos/react.svg" alt="React"><span>React</span></div>
-        <div class="tech-item"><img src="img/logos/docker.svg" alt="Docker"><span>Docker</span></div>
-        <div class="tech-item"><img src="img/logos/linux.svg" alt="Linux"><span>Linux</span></div>
-        <div class="tech-item"><img src="img/logos/mysql.svg" alt="MySQL"><span>MySQL</span></div>
-        <div class="tech-item"><img src="img/logos/mongodb.svg" alt="MongoDB"><span>MongoDB</span></div>
-        <div class="tech-item"><img src="img/logos/git.svg" alt="Git"><span>Git</span></div>
-        <div class="tech-item"><img src="img/logos/bash.svg" alt="Bash"><span>Bash</span></div>
+        <div class="tech-item"><img src="img/iconos/react.svg" alt="React"><span>React</span></div>
+        <div class="tech-item"><img src="img/iconos/docker.svg" alt="Docker"><span>Docker</span></div>
+        <div class="tech-item"><img src="img/iconos/linux.svg" alt="Linux"><span>Linux</span></div>
+        <div class="tech-item"><img src="img/iconos/mysql.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="tech-item"><img src="img/iconos/mongodb.svg" alt="MongoDB"><span>MongoDB</span></div>
+        <div class="tech-item"><img src="img/iconos/git.svg" alt="Git"><span>Git</span></div>
+        <div class="tech-item"><img src="img/iconos/bash.svg" alt="Bash"><span>Bash</span></div>
       </div>
     </section>
 
 
-    <!-- BLOG -->
-    <section id="blog">
+    <!-- BLOG &ARTICULOS TÉCMNICOS-->
+    <section id="blog-articulos">
       <h2>Blog & Artículos Técnicos</h2>
       <p>En este espacio comparto aprendizajes, trucos de programación y soluciones técnicas a problemas reales.</p>
 
@@ -207,7 +207,6 @@
           </iframe>
         </div>
 
-        <!-- Lista de artículos a la derecha -->
         <!-- Lista de artículos a la derecha -->
         <div class="blog-list" id="articleList">
           <div class="blog-card active"
@@ -222,17 +221,20 @@
             <p>Guía para instalar y configurar Zabbix Server y Agent paso a paso.</p>
           </div>
 
-          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_LINEALES/preview">
+          <div class="blog-card"
+            data-doc="https://docs.google.com/document/d/1X4-ebj68lQsGCZZ6kEKqX6eapUnuexCKrqZ_P54rgw0/preview">
             <h3>🧮 Estructuras de Datos Lineales</h3>
             <p>Resumen práctico de listas, pilas, colas y sus implementaciones básicas.</p>
           </div>
 
-          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_SCRIPTING/preview">
+          <div class="blog-card" 
+            data-doc="https://docs.google.com/document/d/1aG9mpFFDfQK7W0BIr8UvcYLk-Lt_4tVNdrN_TcnptZQ/preview">
             <h3>💻 Comandos útiles en scripting</h3>
             <p>Trucos de Bash para scripts más potentes: sed, awk, arrays, funciones y más.</p>
           </div>
 
-          <div class="blog-card" data-doc="https://docs.google.com/document/d/REEMPLAZAR_ID_ARBOL/preview">
+          <div class="blog-card" 
+            data-doc="https://docs.google.com/document/d/1S8e0Z7UW2o5VAhX-FmmaRDSyi_KklazYbtqBTAqIlhs/preview">
             <h3>🌲 Árboles Binarios en profundidad</h3>
             <p>Teoría y ejemplos de inserción, recorrido y eliminación en árboles binarios.</p>
           </div>
@@ -242,11 +244,6 @@
       </div>
     </section>
 
-
-
-
-
-
     <!-- CERTIFICADOS -->
     <section id="certificados">
       <h2>Certificados</h2>
@@ -255,7 +252,7 @@
 
         <!-- Certificado Cisco -->
         <div class="certificado-item">
-          <a href="img/certificados/certificado_de_linux_1_por_cisco.pdf" target="_blank">
+          <a href="docs/certificados/certificado_de_linux_1_por_cisco.pdf" target="_blank">
             <img src="img/certificados/linux1.png" alt="Certificado Linux I - Cisco">
           </a>
           <p><strong>Linux I – Cisco Networking Academy (2025)</strong></p>
@@ -263,7 +260,7 @@
 
         <!-- Certificado SkillsBuild -->
         <div class="certificado-item">
-          <a href="img/certificados/certificado_de_finalización_skillsbuild.pdf" target="_blank">
+          <a href="docs/certificados/certificado_de_finalización_skillsbuild.pdf" target="_blank">
             <img src="img/certificados/certificado_de_finalización_skillsbuild.png"
               alt="Certificado SQL, Flask y Django - IBM SkillsBuild">
           </a>
@@ -272,7 +269,7 @@
 
         <!-- Certificado Git & GitHub -->
         <div class="certificado-item">
-          <a href="img/certificados/certificado_giygithub.pdf" target="_blank">
+          <a href="docs/certificados/certificado_giygithub.pdf" target="_blank">
             <img src="img/certificados/certificado_de_git&github.png" alt="Certificado Git & GitHub - Udemy">
           </a>
           <p><strong>Git & GitHub – Udemy (2018)</strong></p>
@@ -294,7 +291,7 @@
             “Destacó por su autonomía, responsabilidad y dominio técnico en plataformas digitales.”
           </blockquote>
           <p><strong>– Raquel García García-Serrano</strong>, RRHH en CIFESAL</p>
-          <a href="docs/recomendacion_cifesal.pdf" target="_blank">📄 Ver carta</a>
+          <a href="docs/recomendaciones/recomendacion_cifesal.pdf" target="_blank">📄 Ver carta</a>
         </div>
 
         <div class="recomendacion-item">
@@ -302,7 +299,7 @@
             “Gran implicación en la implantación de un ERP con Odoo y excelente actitud para aprender.”
           </blockquote>
           <p><strong>– Andrés Casanueva Tomás</strong>, CEO en Ábaco Developments</p>
-          <a href="docs/recomendacion_abaco_practicas1.pdf" target="_blank">📄 Ver carta</a>
+          <a href="docs/recomendaciones/recomendacion_abaco_practicas1.pdf" target="_blank">📄 Ver carta</a>
         </div>
 
         <div class="recomendacion-item">
@@ -310,16 +307,14 @@
             “Desarrolló soluciones con IA en Python que automatizaron procesos y generaron un ahorro notable.”
           </blockquote>
           <p><strong>– Andrés Casanueva Tomás</strong>, CEO en Ábaco Developments</p>
-          <a href="docs/recomendacion_abaco_practicas2.pdf" target="_blank">📄 Ver carta</a>
+          <a href="docs/recomendaciones/recomendacion_abaco_practicas2.pdf" target="_blank">📄 Ver carta</a>
         </div>
 
       </div>
-
     </section>
 
-
     <!-- CONTACTO -->
-    <section id="contacto" class="contacto-ubicacion">
+    <section id="contacto">
       <h2>Contacto</h2>
       <div class="contacto-grid">
 
@@ -348,7 +343,7 @@
           </form>
         </div>
 
-        <!-- Mapa -->
+        <!-- MAPA -->
         <div class="mapa-container">
           <h3>Ubicación</h3>
           <p>Estoy disponible para trabajar de forma remota o presencial en Madrid.</p>
@@ -368,7 +363,7 @@
     <p>&copy; 2025 José Miguel DevSof · Hecho con ❤️ y café ☕</p>
   </footer>
 
-  <script src="javascript.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
