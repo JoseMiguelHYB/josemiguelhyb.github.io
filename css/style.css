@@ -38,10 +38,25 @@ header p {
   background: #e0a800;
 }
 
+/*
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 30px 20px;
+}*/
+
+/*IMPORTANTE RESOLUCION */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
 }
 
 .intro {
@@ -549,6 +564,11 @@ body.dark-mode .stack-section {
 }
 
 /*CERTIFICADOS EN PEQUEÑITOS*/
+
+#certificados {
+  margin-top: 50px;
+}
+
 .certificados-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -795,4 +815,17 @@ body.dark-mode .stack-section {
   iframe#docFrame {
     height: 300px;
   }
+}
+
+/* STACK BLOG Y ARTÍCULOS */
+.stack-blog-articulos {
+  text-align: center;
+  padding: 20px 20px;
+  background: #edf7ed; /* Verde suave profesional */
+  color: #111;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.08); /* Sombra más sutil */
 }
