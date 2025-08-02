@@ -775,3 +775,15 @@ body.dark-mode .stack-section {
   box-shadow: 0 2px 6px rgba(0, 128, 0, 0.08); /* Sombra más sutil */
 }
 
+.btn-doc {
+  background-color: #6c63ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0.2rem;
+  display: inline-block;
+}
+.btn-doc:hover {
+  background-color: #554ce0;
+}
